@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BTS CSS Selector Forms</title>
+
+    <style>
+        /* ===== Universal Selector ===== */
+        * {
+            font-family: Arial, sans-serif;
+            background-color: #f7f1ff;
+        }
+
+        /* ===== Group Selector ===== */
+        h1, h2 {
+            color: #6a1b9a;
+            text-align: center;
+        }
+
+        /* ===== Element Selector ===== */
+        p {
+            color: #333;
+        }
+
+        /* ===== ID Selector ===== */
+        #intro {
+            background-color: #e1bee7;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* ===== Class Selector ===== */
+        .member {
+            border: 2px solid #9c27b0;
+            padding: 8px;
+            margin: 8px 0;
+            background-color: #f3e5f5;
+        }
+
+        /* ===== Combinator Selectors ===== */
+
+        /* Descendant selector */
+        div p {
+            color: #4a148c;
+        }
+
+        /* Child selector */
+        div > span {
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        /* Adjacent sibling selector */
+        h2 + p {
+            background-color: #ede7f6;
+            padding: 5px;
+        }
+
+        /* General sibling selector */
+        h2 ~ p {
+            font-style: italic;
+        }
+
+        /* ===== Pseudo-class Selector ===== */
+        a:hover {
+            color: white;
+            background-color: #8e24aa;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        /* ===== Pseudo-element Selector ===== */
+        p::first-letter {
+            font-size: 22px;
+            color: #6a1b9a;
+        }
+
+        /* ===== Attribute Selector ===== */
+        input[type="text"] {
+            border: 2px solid #6a1b9a;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>BTS CSS Selector Forms</h1>
+
+<div id="intro">
+    <p>BTS is a world-famous K-pop group.</p>
+</div>
+
+<h2>Members</h2>
+
+<p class="member">RM – Leader</p>
+<p class="member">Jin – Vocalist</p>
+
+<div>
+    <span>Jungkook</span>
+    <p>Main Vocalist & Dancer</p>
+</div>
+
+<p>V – Vocalist</p>
+<p>J-Hope – Rapper</p>
+
+<br>
+
+<a href="#">Hover for BTS Magic 💜</a>
+
+<br><br>
+
+<input type="text" placeholder="Enter your bias">
+
+</body>
+</html>
