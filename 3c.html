@@ -1,0 +1,44 @@
+<!-- styles_demo.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Styles Program</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        p {
+            color: purple;
+            font-family: Arial;
+        }
+
+        .internal {
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>External Style Example</h2>
+
+    <p>This paragraph uses INTERNAL CSS.</p>
+
+    <p class="internal">
+        This paragraph uses INTERNAL CSS with class selector.
+    </p>
+
+    <p class="external">
+        This paragraph uses EXTERNAL CSS.
+    </p>
+
+    <!-- Inline CSS -->
+    <p style="color:red; font-size:18px;">
+        This paragraph uses INLINE CSS.
+    </p>
+
+</body>
+</html>
