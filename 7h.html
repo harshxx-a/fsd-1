@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+function Student(name, age)
+{
+    this.name = name;      // property
+    this.age = age;        // property
+
+    this.display = function()   // method
+    {
+        return "Name: " + this.name + " Age: " + this.age;
+    }
+}
+
+let s1 = new Student("Rahul",20);
+
+document.write(s1.display());
+
+</script>
+
+</body>
+</html>
