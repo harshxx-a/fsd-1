@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+&nbsp; <title>Taking Input</title>
+
+</head>
+
+<body>
+
+
+
+&nbsp; <h2>Input in JavaScript</h2>
+
+
+
+&nbsp; Enter your name:
+
+&nbsp; <input type="text" id="name">
+
+&nbsp; <button onclick="getInput()">Submit</button>
+
+
+
+&nbsp; <p id="result"></p>
+
+
+
+&nbsp; <script>
+
+&nbsp;   function getInput() {
+
+&nbsp;     var n = document.getElementById("name").value;  
+
+&nbsp;     var c = prompt("Enter your city:");             
+&nbsp;     var a = confirm("Are you a student?");          
+
+
+
+&nbsp;     document.getElementById("result").innerHTML =
+
+&nbsp;       "Name: " + n + "<br>" +
+
+&nbsp;       "City: " + c + "<br>" +
+
+&nbsp;       "Student: " + a;
+
+&nbsp;   }
+
+&nbsp; </script>
+
+
+
+</body>
+
+</html>
