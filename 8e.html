@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number</title>
+</head>
+<body>
+
+<script>
+   
+    let num = parseInt(prompt("Enter a number:"));
+    let originalNum = num;
+    let sum = 0;
+
+    
+    let digits = num.toString().length;
+
+   
+    while (num > 0) {
+        let digit = num % 10;
+        sum += Math.pow(digit, digits);
+        num = Math.floor(num / 10);
+    }
+
+    
+    if (sum === originalNum) {
+        alert(originalNum + " is an ARMSTRONG NUMBER");
+        document.write("<h2>" + originalNum + " is an ARMSTRONG NUMBER</h2>");
+    } else {
+        alert(originalNum + " is NOT an ARMSTRONG NUMBER");
+        document.write("<h2>" + originalNum + " is NOT an ARMSTRONG NUMBER</h2>");
+    }
+</script>
+
+</body>
+</html>

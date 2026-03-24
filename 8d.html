@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Looping</title>
+</head>
+<body>
+
+<script>
+    
+    let student = {
+        name: "Srujana",
+        age: 20,
+        course: "B.Tech",
+        branch: "CIC"
+    };
+
+    document.write("<h2>Using for-in loop:</h2>");
+    
+    for (let key in student) {
+        document.write(key + " : " + student[key] + "<br>");
+    }
+
+    document.write("<h2>Using forEach loop:</h2>");
+    
+    let entries = Object.entries(student);
+
+    entries.forEach(function(item) {
+        document.write(item[0] + " : " + item[1] + "<br>");
+    });
+
+    document.write("<h2>Using for-of loop:</h2>");
+    
+    for (let [key, value] of entries) {
+        document.write(key + " : " + value + "<br>");
+    }
+</script>
+
+</body>
+</html>
